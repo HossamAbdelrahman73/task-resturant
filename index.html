@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon" />
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="relative bg-black">
+    <div class="loading fixed inset-0">
+      <span
+        class="loader absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+      ></span>
+    </div>
+    <!-- sidebar -->
+    <!-- done%%%%%%%%%%% -->
+    <aside
+      class="fixed top-0 bottom-0 left-0 bg-red-600 w-[330px] z-[99999] flex duration-[.3s]"
+    >
+      <div
+        class="bg-black w-[80%] p-7 pe-0 text-[16px] font-[400] text-white flex flex-col justify-between"
+      >
+        <div class="overflow-hidden cursor-pointer content-aside">
+          <div id="elements-trans" class="duration-[1s]">
+            <p id="Search" class="text duration-[.1s]">Search</p>
+            <p id="Categories" class="py-4 text duration-[.8s]">Categories</p>
+            <p id="Area" class="text duration-[1s]">Area</p>
+            <p id="Ingredent" class="py-4 text duration-[1.5s]">ingredients</p>
+            <p id="Contact" class="text duration-[2s]">Contact Us</p>
+          </div>
+        </div>
+        <div>
+          <span><i class="fa-brands fa-facebook"></i></span>
+          <span><i class="fa-brands fa-twitter"></i></span>
+          <span><i class="fa-solid fa-globe"></i></span>
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div
+        class="bg-white w-[20%] flex flex-col justify-between items-center py-6"
+      >
+        <div class="" id="logo">
+          <img src="./imgs/logo.png" class="w-[50px]" alt="" />
+        </div>
+        <div id="closeBtn">
+          <!-- <i
+            class="fa-solid fa-xmark text-[32px] font-[900] cursor-pointer"
+          ></i> -->
+          <i class="fa-solid fa-bars text-[32px] font-[900] cursor-pointer"></i>
+        </div>
+
+        <div>
+          <span><i class="fa-solid fa-globe"></i></span>
+          <div><i class="fa-solid fa-share"></i></div>
+        </div>
+      </div>
+    </aside>
+
+    <div id="total">
+      <!-- section first screen -->
+
+      <section class="" id="first-page">
+        <div class="container mx-auto">
+          <div
+            class="grid md:grid-cols-4 gap-5 py-12 font-[500] text-[28px] taksyma-first"
+          ></div>
+        </div>
+      </section>
+
+      <!-- section meal recipe -->
+      <!-- done%%%%%%%%%%%% -->
+      <section class="">
+        <div class="container mx-auto"></div>
+      </section>
+    </div>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/aside.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

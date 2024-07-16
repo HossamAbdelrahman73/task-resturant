@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="relative bg-black">
+    <!-- section contact nav -->
+
+    <div class="loading fixed inset-0">
+      <span
+        class="loader absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+      ></span>
+    </div>
+
+    <aside
+      class="fixed top-0 bottom-0 left-0 bg-red-600 w-[330px] z-[99999] flex duration-[.3s]"
+    >
+      <div
+        class="bg-black w-[80%] p-7 pe-0 text-[16px] font-[400] text-white flex flex-col justify-between"
+      >
+        <div class="overflow-hidden cursor-pointer content-aside">
+          <div id="elements-trans" class="duration-[1s]">
+            <p id="Search" class="text duration-[.1s]">Search</p>
+            <p id="Categories" class="py-4 text duration-[.8s]">Categories</p>
+            <p id="Area" class="text duration-[1s]">Area</p>
+            <p id="Ingredent" class="py-4 text duration-[1.5s]">ingredients</p>
+            <p id="Contact" class="text duration-[2s]">Contact Us</p>
+          </div>
+        </div>
+        <div>
+          <span><i class="fa-brands fa-facebook"></i></span>
+          <span><i class="fa-brands fa-twitter"></i></span>
+          <span><i class="fa-solid fa-globe"></i></span>
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div
+        class="bg-white w-[20%] flex flex-col justify-between items-center py-6"
+      >
+        <div class="" id="logo">
+          <img src="./imgs/logo.png" class="w-[50px]" alt="" />
+        </div>
+        <div id="closeBtn">
+          <!-- <i
+        class="fa-solid fa-xmark text-[32px] font-[900] cursor-pointer"
+      ></i> -->
+          <i class="fa-solid fa-bars text-[32px] font-[900] cursor-pointer"></i>
+        </div>
+
+        <div>
+          <span><i class="fa-solid fa-globe"></i></span>
+          <div><i class="fa-solid fa-share"></i></div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="h-[100vh] flex justify-center items-center">
+      <div class="container mx-auto">
+        <div class="">
+          <form
+            action=""
+            class="grid md:grid-cols-2 gap-x-4 mb-5 md:mt-4 mt-32 px-44 relative pb-20 md:w-auto w-[300px]"
+          >
+            <div class="">
+              <input
+                required
+                class="p-2 md:w-full w-[200px] border mt-5 focus:outline-none rounded-md focus:ring focus:border-blue-500"
+                placeholder="Enter Your Name"
+                type="text"
+                name=""
+                id="name"
+              />
+              <div
+                class="bg-[#F8D7DA] hidden text-red-800 mt-2 text-center py-4 rounded-md"
+              >
+                Special characters and numbers not allowed
+              </div>
+            </div>
+
+            <div class="">
+              <input
+                required
+                class="p-2 md:w-full w-[200px] border mt-5 focus:outline-none rounded-md focus:ring focus:border-blue-500"
+                placeholder="Enter Your Email"
+                type="email"
+                name=""
+                id="mail"
+              />
+
+              <div
+                class="bg-[#F8D7DA] hidden text-red-800 mt-2 text-center py-4 rounded-md"
+              >
+                Email not valid *exemple@yyy.zzz
+              </div>
+            </div>
+
+            <div>
+              <input
+                required
+                class="p-2 md:w-full w-[200px] border mt-5 focus:outline-none rounded-md focus:ring focus:border-blue-500"
+                placeholder="Enter Your Phone"
+                type="text"
+                name=""
+                id="phone"
+              />
+              <div
+                class="bg-[#F8D7DA] hidden text-red-800 mt-2 text-center py-4 rounded-md"
+              >
+                Enter valid Phone Number
+              </div>
+            </div>
+
+            <div>
+              <input
+                required
+                class="p-2 md:w-full w-[200px] border mt-5 focus:outline-none rounded-md focus:ring focus:border-blue-500"
+                placeholder="Enter Your Age"
+                type="number"
+                name=""
+                id="age"
+              />
+              <div
+                class="bg-[#F8D7DA] hidden text-red-800 mt-2 text-center py-4 rounded-md"
+              >
+                Enter valid age
+              </div>
+            </div>
+
+            <div>
+              <input
+                required
+                class="p-2 md:w-full w-[200px] border mt-5 focus:outline-none rounded-md focus:ring focus:border-blue-500"
+                placeholder="Enter Your Password"
+                type="password"
+                name=""
+                id="password"
+              />
+              <div
+                class="bg-[#F8D7DA] hidden text-red-800 mt-2 text-center py-4 rounded-md px-6"
+              >
+                Enter valid password *Minimum eight characters, at least one
+                letter and one number:*
+              </div>
+            </div>
+
+            <div>
+              <input
+                required
+                class="p-2 md:w-full w-[200px] border mt-5 focus:outline-none rounded-md focus:ring focus:border-blue-500"
+                placeholder="Enter Your Repassword"
+                type="password"
+                name=""
+                id="repassword"
+              />
+
+              <div
+                class="bg-[#F8D7DA] hidden text-red-800 mt-2 text-center py-4 rounded-md h-fit"
+              >
+                Enter valid repassword
+              </div>
+            </div>
+
+            <div
+              class="text-center hover:bg-red-700 hover:text-white border-[1px] border-red-500 p-2 rounded-md mx-auto w-fit cursor-pointer text-red-500 mt-5 absolute bottom-5 left-[50%] translate-x-[-50%] md:ms-0 ms-24"
+            >
+              <button type="Submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/aside.js"></script>
+    <script src="./js/contact.js"></script>
+  </body>
+</html>
